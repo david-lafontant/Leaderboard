@@ -1,17 +1,28 @@
 # Leaderboard project 1
 
+
+## Live demo link
+
+[Live demo Link](https://david-lafontant.github.io/Leaderboard/)
+
+## Screenshot
+
+![Screenshot](screenshot.png)
+
 ## Description
-This is a basic website; a Leader board Application that displays a list that looks and behaves like the part of minimalist project. 
+This is a basic website; a Leader board Application that displays a list that looks and behaves like the part of minimalist project.
 
 
 ## Getting started
-If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 
-Download the ZIP from this location, or run the following git command to clone the files to your machine:
+To explore or play with this code you should :
 
-* Once the files are on your machine, open the Leaderboard folder in Visual Studio Code.
+- Download and install Git
+- Clone the repository with: `git clone https://github.com/david-lafontant/Leaderboard.git`
+- Open the repository with your favorite Integrated Development Environment
+- Install webpack with: `npm install --save-dev webpack webpack-cli`
+- Type in `nmp run start` or run live server from the docs directory
 
-* With the files open in Visual Studio Code, press the Go Live button at the bottom of the window to launch the files with Live Server.
 
 ## How it works
 
@@ -41,15 +52,6 @@ Please give a ⭐️ if you like this project!
 - Hat tip to anyone contributed one way or the other.
 - Inspiration
 - etc
-
-
-## Demo link
-
-[Demo Link](https://david-lafontant.github.io/Leaderboard/)
-
-## Screenshot
-
-![Screenshot](screenshot.png)
 
 
 ## License
