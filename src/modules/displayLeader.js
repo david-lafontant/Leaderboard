@@ -5,21 +5,16 @@ const displayLeader = () => {
     newLeader.removeChild(newLeader.lastChild);
   }
 
-
   const leaders = JSON.parse(localStorage.getItem('leaders'));
 
-
-  leaders.forEach((book, index) => {
+  leaders.forEach((book) => {
     const newRow = document.createElement('tr');
     newRow.innerHTML = `
               <td>${book.name}</td>
               <td>: ${book.score}</td>
           `;
     newLeader.appendChild(newRow);
-
-
-  })
-
-}
+  });
+};
 
 export default displayLeader;
