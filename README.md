@@ -15,9 +15,9 @@ Download the ZIP from this location, or run the following git command to clone t
 
 ## How it works
 
-The leaderboard allows the user to enter the name and the score of a leader.
-By clicking on the submit button the information regarding the leader is stored in memory;
-By clicking on the refresh button the list of leader in memory and their score are displayed on the screen;
+The Leaderboard web application allows the user to enter the name and the score of a leader.
+* By clicking on the submit button the information regarding the leader is stored in memory;
+* By clicking on the refresh button the list of leader in memory and their score are displayed on the screen;
 
 ## Technologies Used
 * CSS
@@ -45,7 +45,11 @@ Please give a ⭐️ if you like this project!
 
 ## Demo link
 
-[Demo Link](https:///)
+[Demo Link](https://david-lafontant.github.io/Leaderboard/)
+
+## Screenshot
+
+![Screenshot](screenshot.png)
 
 
 ## License
