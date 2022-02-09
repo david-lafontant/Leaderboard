@@ -19,7 +19,8 @@ To explore or play with this code you should :
 
 - Download and install Git
 - Clone the repository with: `git clone https://github.com/david-lafontant/Leaderboard.git`
-- Open the repository with your favorite Integrated Development Environment
+- Open the repository with: `cd Leaderboard` 
+- Use your favorite Integrated Development Environment (e.g. for Visual Studio Code the command is `code .`)
 - Install webpack with: `npm install --save-dev webpack webpack-cli`
 - Type in `nmp run start` or run live server from the docs directory
 
