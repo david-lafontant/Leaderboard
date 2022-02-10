@@ -1,18 +1,29 @@
-const addLeader = (url) => {
-  const leaderName = document.querySelector('#leaderName').value;
-  const leaderScore = document.querySelector('#leaderScore').value;
+import displayLeader from './displayLeader';
 
-  const leaderObj = {
-    name: leaderName,
-    score: leaderScore
-  };
-  fetch(url, {
+const postData = async (url, dataObj) => {
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+
+  var raw = JSON.stringify(dataObj);
+
+  var requestOptions = {
     method: 'POST',
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-    body: JSON.stringify(leaderObj),
-  });
-};
+    headers: myHeaders,
+    body: raw,
+    redirect: 'follow'
+  };
 
-export default addLeader;
+  fetch(url, requestOptions)
+
+}
+
+const getData = async (url) => {
+  const response = await fetch(url);
+  const data = await response.json();
+  displayLeader(data)
+   
+}
+
+
+
+export {postData, getData};
