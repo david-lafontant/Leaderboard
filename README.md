@@ -28,14 +28,15 @@ To explore or play with this code you should :
 ## How it works
 
 The Leaderboard web application allows the user to enter the name and the score of a leader.
-* By clicking on the submit button the information regarding the leader is stored in memory;
-* By clicking on the refresh button the list of leader in memory and their score are displayed on the screen;
+* By clicking on the submit button the information regarding the leader name and the score is stored in the API.
+* By clicking on the refresh button the list of leaders and their scores are retrieved from the API, then sorted before being displayed on the screen.
 
 ## Technologies Used
 * CSS
 * HTML
 * JAVASCRIPT
 * GitHub
+* API
 
 ## Author
 
