@@ -2,7 +2,7 @@ import _ from 'lodash';
 import './index.css';
 import { postData, getData } from './modules/consumeAPI';
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uEgNc2vETjvQ4Ys8JP74/scores';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/VzN7O8T4EnkUsH2tQyoI/scores';
 
 document.querySelector('.btn-submit').addEventListener('click', (e) => {
   e.preventDefault();
