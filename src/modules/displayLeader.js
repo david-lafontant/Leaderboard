@@ -1,4 +1,7 @@
-const displayLeader = () => {
+
+
+
+const displayLeader = async () => {
   const newLeader = document.querySelector('.table_item');
 
   while (newLeader.hasChildNodes()) {
