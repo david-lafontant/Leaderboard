@@ -1,23 +1,22 @@
+const displayLeader = (data) => {
 
-
-
-const displayLeader = async () => {
   const newLeader = document.querySelector('.table_item');
 
   while (newLeader.hasChildNodes()) {
     newLeader.removeChild(newLeader.lastChild);
   }
+  data.result.sort((a, b) => a.score - b.score);
 
-  const leaders = JSON.parse(localStorage.getItem('leaders'));
-
-  leaders.forEach((book) => {
+  for (let i = 0; i < data.result.length; i++) {
     const newRow = document.createElement('tr');
     newRow.innerHTML = `
-              <td>${book.name}</td>
-              <td>: ${book.score}</td>
+              <td>${data.result[i].user}</td>
+              <td>: ${data.result[i].score}</td>
           `;
     newLeader.appendChild(newRow);
-  });
-};
+
+  }
+
+}
 
 export default displayLeader;
