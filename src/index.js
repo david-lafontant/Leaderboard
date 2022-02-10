@@ -1,9 +1,8 @@
 import _ from 'lodash';
 import './index.css';
-import {postData, getData} from './modules/consumeAPI';
+import { postData, getData } from './modules/consumeAPI';
 
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uEgNc2vETjvQ4Ys8JP74/scores';
-
 
 document.querySelector('.btn-submit').addEventListener('click', (e) => {
   e.preventDefault();
@@ -12,8 +11,8 @@ document.querySelector('.btn-submit').addEventListener('click', (e) => {
 
   const objLeader = {
     user: leaderName,
-    score: leaderScore
-  }
+    score: leaderScore,
+  };
 
   postData(url, objLeader);
 
@@ -21,9 +20,7 @@ document.querySelector('.btn-submit').addEventListener('click', (e) => {
   document.querySelector('#leaderScore').value = '';
 });
 
-
 document.querySelector('.refresh_btn').addEventListener('click', (e) => {
   e.preventDefault();
-getData(url);
-
+  getData(url);
 });

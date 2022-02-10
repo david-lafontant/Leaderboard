@@ -1,5 +1,4 @@
 const displayLeader = (data) => {
-
   const newLeader = document.querySelector('.table_item');
 
   while (newLeader.hasChildNodes()) {
@@ -14,9 +13,7 @@ const displayLeader = (data) => {
               <td>: ${data.result[i].score}</td>
           `;
     newLeader.appendChild(newRow);
-
   }
-
-}
+};
 
 export default displayLeader;
