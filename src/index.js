@@ -1,7 +1,9 @@
 import _ from 'lodash';
 import './index.css';
-// import addLeader from './modules/addLeader';
-import displayLeader from './modules/displayLeader';
+import {postData, getData} from './modules/consumeAPI';
+
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/uEgNc2vETjvQ4Ys8JP74/scores';
+
 
 document.querySelector('.btn-submit').addEventListener('click', (e) => {
   e.preventDefault();
